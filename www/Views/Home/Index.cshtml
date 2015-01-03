@@ -1,0 +1,7 @@
+﻿<h2>Welcome to ASP.NET MVC @ViewData["Version"] on @ViewData["Runtime"]!</h2>
+
+@foreach (string asm in (IEnumerable<string>)(ViewData["Assemblies"]))
+{
+	<div>@asm</div>
+}
+
